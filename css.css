@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.buttonn{
+  background-color: red;
+  color:white;
+  padding: 10px;
+  border: 50px;
+  margin: 20px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  text-align: center;
+  align-items: center;
+}
+.buttonn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+}
+
+
+.home-page{
+  background-image:url(./back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 50px;
+    margin-bottom: 100px;
+}
+
+.logo{
+    width: 10.4375rem;
+    height: 3.8125rem;
+    margin-right: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+#language{
+     margin-right: 1 .375rem;
+     border-radius: 5px;
+     background: transparent;
+     padding: 0 10px;
+     height: 40px;
+     margin-right: 20px;
+}
+
+option{
+    background-color: gray;
+}
+
+
+.signin{
+    background-color: #e50914;
+    font-size: 1rem;
+    padding: 0 20px;
+    border-radius: 5px;
+    height: 40px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.main {
+    text-align: center;
+    padding: 75px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
+.main h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    transition: transform 0.8s ease, box-shadow 0.5s ease;
+}
+
+.main h1:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+}
+.main h3{
+  font-size:15px;
+  margin-bottom: 10px;
+  transition: transform 0.8s ease, box-shadow 0.5s ease;
+}
+.main h3:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+}
+.main p{
+    font-size: 1.625rem;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.main p:hover{
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    margin-bottom: 20px;
+    font-weight: 70px;
+}
+
+.form div{
+    width: 500px;
+    height: 70px;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.form input{
+    height: 100%;
+    width: 100%;
+    background-color: #141414; 
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form .buttonn{
+    width: 250px;
+    background-color: #e50914;
+    font-size: 1.875rem;
+
+}
+
+.form label{
+    position: absolute;
+    left: 10px;
+    color: gray;
+}
+
+.content li{
+  width: 33.33%;
+}
+
+@media (max-width: 1750px){
+    .main h1{
+        font-size: 3.125rem;
+    }
+    .form div{
+        width: 450px;
+        height: 60px;
+    }
+    .form button{
+        width: 212px;
+        font-size: 1.625rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo{
+        width: 100px;
+        height: 35px;
+    }
+    .form{
+        display: block;
+    }
+    .form div{
+        height: 48px;
+        width: auto;
+    }
+    .form button{
+        font-size: 1rem;
+        height: 40px;
+        width: 130px;
+        margin-top: 15px;
+    }
+    h3{
+        font-size: 1.625rem;
+        width: 500px;
+    } 
+}
+
+@media (max-width: 4800px) {
+    .main h1{
+        font-size: 1.75rem;
+    }
+    .main br {
+        display: none;
+    }
+    .main p, h3{
+        font-size: 1.125rem;;
+    }
+    .navbar{
+        margin: 0;
+    }
+    #backimg{
+        height: 485px;
+    }
+    .logo{
+        width: 88px;
+    }
+    .navbar{
+        padding: 20px 15px ;
+    }
+    .navbar #language{
+        width: 100px;
+        height: 28px;
+    }
+    .signin{
+        width: 60px;
+        height: 28px;
+        padding: 2px;
+    }
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+
+
+.container {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+.trending .carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  position: relative;
+  min-width: 160px;
+  max-width: 160px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card .number {
+  position: absolute;
+  margin-top: 160px;
+  top: 8px;
+  left: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.card:hover{
+  transform: scale(1.25);
+  box-shadow: 0 4px 20px rgba(0, 1, 2, 6);
+}
+.logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+
+}
+.signin:hover{
+  transform: scale(1.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+}
+
+
+.reasons {
+  margin-top: 50px;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.reason-box {
+  background-color: #310e68;
+  background-image: linear-gradient(360deg, #310e68 0%, #5f0f40 74%);
+  padding: 16px;
+  border-radius: 40px;
+  color: white;
+}
+
+.reason-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 28px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow.left {
+  margin-right: 10px;
+}
+
+.arrow.right {
+  margin-left: 10px;
+}
+
+
+footer{
+  background-color: #141414;
+  padding: 50px 0;
+}
+.footercontent{
+  width: 60%;
+  margin: auto;
+}
+
+.content{
+  width: 100%;
+  margin: auto;
+  max-height: 200px;
+}
+
+footer a{
+  color: gray;
+  text-decoration: none;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+   float: start;
+}
+.content p{
+  margin-bottom: 50px;
+}
+.content li{
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+  font-family: 13;px
+}
+.content a:hover{
+  text-decoration: underline;
+}
+
+.footercontent p{
+  color: gray;
+  margin-top: 30px;
+}
+
+footer select{
+  color: gray;
+  width: 140px;
+  font-size: 20px;
+}
+
+footer select option{
+  background-color: #141414;
+}
